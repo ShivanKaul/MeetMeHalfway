@@ -8,6 +8,10 @@ CORS(app)
 
 @app.route('/')
 def index():
+    return 'This is the API server.'
+
+@app.route('/get_c')
+def get_c_endpoint():
     a_long = float(request.args.get('a_long'))
     a_lat = float(request.args.get('a_lat'))
     b_long = float(request.args.get('b_long'))
