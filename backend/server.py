@@ -13,7 +13,7 @@ def index():
     b_long = float(request.args.get('b_long'))
     b_lat = float(request.args.get('b_lat'))
     c_long, c_lat = get_c(a_long, a_lat, b_long, b_lat)
-    return (c_long, c_lat)
+    return jsonify({"c_long": c_long, "c_lat": c_lat})
 
 PORT = int(os.environ.get('PORT', 5000))
 print("Running on port " + str(PORT))
