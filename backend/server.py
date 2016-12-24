@@ -8,10 +8,10 @@ CORS(app)
 
 @app.route('/')
 def index():
-    a_long = request.args.get('a_long')
-    a_lat = request.args.get('a_lat')
-    b_long = request.args.get('b_long')
-    b_lat = request.args.get('b_lat')
+    a_long = float(request.args.get('a_long'))
+    a_lat = float(request.args.get('a_lat'))
+    b_long = float(request.args.get('b_long'))
+    b_lat = float(request.args.get('b_lat'))
     c_long, c_lat = get_c(a_long, a_lat, b_long, b_lat)
     return (c_long, c_lat)
 
