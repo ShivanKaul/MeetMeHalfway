@@ -33,6 +33,8 @@ Run `pip install -r requirements.txt`. This should install all the dependencies.
 
 Simply do: `python backend/server.py`. This should start up the backend API server. To interact with it, I'd suggest downloading something like [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop). This is what I'd use to test:
 
+![Screenshot](/screenshot-postman.png?raw=true "Screenshot of Postman UI") 
+
 
 
 
